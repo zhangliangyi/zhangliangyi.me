@@ -11,7 +11,6 @@
 angular
   .module('zhangliangyimeApp', [
     'ngAnimate',
-    'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
