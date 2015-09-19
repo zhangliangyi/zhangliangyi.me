@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Zhang, Liangyi</title>
+  <meta name="description" content="Zhang, Liangyi's personal page">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="build/css/app.css" rel="stylesheet"/>
+  <script src="build/vendors/require.js"></script>
+  <script>
+    require(['build/config'], function () {
+      // Configuration loaded now, safe to do other require calls
+      // that depend on that config.
+      require(['components/App'], function (App) {
+        var app = new App();
+        app.init();
+      });
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
