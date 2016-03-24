@@ -1,22 +1,16 @@
 'use strict';
 
-define('components/App', ['react'], function (React) {
+var React = require('react');
+var Section = require('./Section');
 
-  function App() {
-    this.AppView = React.createClass({
-      render: function () {
-        return (
-          <div>
-            <p>Hello, React!</p>
-          </div>
-        );
-      }
-    });
+class App extends React.Component {
+  render() {
+    return (
+      <main className="app">
+        <Section/>
+      </main>
+    );
   }
+}
 
-  App.prototype.init = function () {
-    React.render(<this.AppView />, document.body);
-  };
-
-  return App;
-});
+module.exports = App;
