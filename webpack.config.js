@@ -1,15 +1,58 @@
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
 module.exports = {
-  entry: "./src/main.js",
+  entry: './src/app.js',
   output: {
-    path: __dirname,
-    filename: "bundle.js"
+    filename: 'bundle.js',
+    path: __dirname + '/build',
+    publicPath: 'build/'
   },
+  plugins: [
+    new UglifyJSPlugin({
+      sourceMap: true
+    })
+  ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        exclude: [/node_modules/, /bower_components/],
-        loader: "babel-loader"
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'react']
+          }
+        }
+      },
+      {
+        test: /\.less$/,
+        use: [{
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader'
+        }, {
+          loader: 'less-loader',
+          options: {
+            strictMath: true,
+            noIeCompat: true
+          }
+        }]
+      },
+      {
+        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+      },
+      {
+        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/octet-stream'
+      },
+      {
+        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
       }
     ]
   }

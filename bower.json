@@ -1,9 +1,0 @@
-{
-  "name": "zhangliangyi.me",
-  "version": "2.0.0",
-  "dependencies": {
-    "font-awesome": "latest",
-    "lodash": "latest"
-  },
-  "appPath": "src"
-}
