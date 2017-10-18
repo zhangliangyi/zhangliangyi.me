@@ -5,7 +5,7 @@ import Contact from './components/Contact.jsx';
 import Skill from './components/Skill.jsx';
 import Experience from './components/Experience.jsx';
 
-import 'bootstrap/less/bootstrap.less';
+import 'bootstrap/scss/bootstrap.scss';
 
 class App extends Component {
   render() {
