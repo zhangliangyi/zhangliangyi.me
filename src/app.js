@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Avatar from './components/Avatar.jsx';
 
 import 'bootstrap/less/bootstrap.less';
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <Avatar/>,
   document.getElementById('root')
 );
