@@ -7,3 +7,6 @@ bower_components/
 
 build/
 dist/
+
+bundle.js
+.DS_Store
