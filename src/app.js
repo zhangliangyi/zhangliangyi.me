@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Avatar from './components/Avatar.jsx';
+import Contact from './components/Contact.jsx';
+import Skill from './components/Skill.jsx';
+import Experience from './components/Experience.jsx';
 
 import 'bootstrap/less/bootstrap.less';
 
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Avatar/>
+        <Skill/>
+        <Experience/>
+        <Contact/>
+      </div>
+    )
+  }
+}
+
 ReactDOM.render(
-  <Avatar/>,
+  <App/>,
   document.getElementById('root')
 );
