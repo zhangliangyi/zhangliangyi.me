@@ -26,17 +26,19 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: [{
-          loader: 'style-loader'
-        }, {
-          loader: 'css-loader'
-        }, {
-          loader: 'less-loader',
-          options: {
-            strictMath: true,
-            noIeCompat: true
-          }
-        }]
+        use: [
+          {loader: 'style-loader'},
+          {loader: 'css-loader'},
+          {loader: 'less-loader', options: {strictMath: true, noIeCompat: true}}
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {loader: 'style-loader'},
+          {loader: 'css-loader'},
+          {loader: 'sass-loader'}
+        ]
       },
       {
         test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
