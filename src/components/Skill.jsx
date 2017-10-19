@@ -5,7 +5,7 @@ class Skill extends Component {
     return (
       <div className="card border-0 my-4">
         <div className="card-body">
-          <h4 className="card-title">Skill</h4>
+          <h5 className="card-title text-secondary">What I am interested in</h5>
         </div>
       </div>
     );

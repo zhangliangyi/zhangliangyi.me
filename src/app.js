@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+
+import Header from './components/Header.jsx';
 import Avatar from './components/Avatar.jsx';
-import Contact from './components/Contact.jsx';
 import Skill from './components/Skill.jsx';
 import Experience from './components/Experience.jsx';
+import Footer from './components/Footer.jsx';
 
 import 'bootstrap/scss/bootstrap.scss';
 
@@ -43,10 +45,11 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Header/>
         <Avatar/>
         <Experience experiences={experiences}/>
         <Skill/>
-        <Contact/>
+        <Footer/>
       </div>
     )
   }
