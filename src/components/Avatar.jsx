@@ -7,8 +7,9 @@ class Avatar extends Component {
         <img className="rounded-circle my-4"
              src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAjQAAAAJGZmYzNiNWJkLTBjNzUtNDA2Zi05M2IwLWMzNWJlMjBhYzc1OQ.jpg"/>
         <h1>Zhang, Liangyi</h1>
-        <h4 className="text-secondary">UI Engineer at SAP working on <span className="text-primary">JavaScript</span>
-        </h4>
+        <h2 className="text-secondary">
+          <small>UI Engineer at SAP working on <span className="text-primary">JavaScript</span></small>
+        </h2>
       </div>
     );
   }
