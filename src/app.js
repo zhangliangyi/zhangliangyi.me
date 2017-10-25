@@ -11,31 +11,35 @@ import 'bootstrap/scss/bootstrap.scss';
 
 const experiences = [
   {
+    index: 3,
+    start: '2014/04',
     logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAEAAQAAAAAAAAogAAAAJDFhOGIxNWI5LWI0YWQtNDYyYy1hNjlhLWQ0M2ZiYmZjZjIxYw.png',
     name: 'SAP China Lab',
-    duration: 'Apr 2014 - present',
     current: true,
     title: 'Senior UI Engineer',
     description: 'Working in UI commons team of Platform Pillar.'
   },
   {
+    index: 2,
+    start: '2013/10',
     logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAIA_wDGAAAAAQAAAAAAAAroAAAAJDcwNWMyNjYxLTdiMDMtNDliOS1iYmQxLTk1Zjk4NjdmYzM3OA.png',
     name: 'Cisco System',
-    duration: 'Oct 2013 – Mar 2014',
     title: 'Software Engineer',
     description: 'Develop real-time data visualization in BI system.'
   },
   {
+    index: 1,
+    start: '2008/07',
     logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/1/000/031/14d/099d1fd.png',
     name: 'ICBC Software Development Center',
-    duration: 'Jul 2008 - Sep 2013',
     title: 'Sr. Software Developer',
     description: 'Develop B/S web applications of operational risk monitoring on both front-end and back-end.'
   },
   {
+    index: 0,
+    start: '2004/09',
     logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/6/005/007/3f8/3848bed.png',
     name: 'Shanghai Jiao Tong University',
-    duration: 'Sep 2004 - Jun 2008',
     title: 'Bachelor of Engineer',
     description: 'Information Security'
   }

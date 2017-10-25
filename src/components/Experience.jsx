@@ -1,25 +1,36 @@
 import React, {Component} from 'react';
 
+import TimePoint from './TimePoint.jsx';
+
 class Experience extends Component {
   render() {
     const experiences = this.props.experiences;
     const experienceList = experiences.map((exp) =>
-      <li className="media mt-5" key={exp.name}>
-
-        <img src={exp.logo} alt={exp.name} className="d-flex mr-3 align-self-start"/>
-
-        <div className="media-body">
-          <div className="d-flex justify-content-between align-self-center">
-            <h5 className="mt-0 mb-1">
-              {exp.name}
-              {exp.current && <span className="badge badge-primary mx-1">Current</span>}
-            </h5>
-            <small>{exp.duration}</small>
+      <li className="mt-5" key={exp.name}>
+        <div className="row align-items-end">
+          <div className="col-1">
+            <TimePoint time={exp.start}/>
           </div>
 
-          <p className="mb-1">{exp.title}</p>
+          <div className="col-11 border border-secondary border-top-0 border-bottom-0 border-right-0">
+            <div className="d-flex">
+              <img src={exp.logo} alt={exp.name} className="d-flex mr-3 align-self-start ml-4"/>
 
-          <small>{exp.description}</small>
+              <div>
+                <div className="d-flex align-self-center">
+                  <h5 className="mt-0 mb-1">
+                    {exp.name}
+                    {exp.current && <span className="badge badge-primary mx-1" style={{position: 'absolute', top: '-2rem', left: '-1.75rem'}}>NOW</span>}
+                  </h5>
+
+                </div>
+
+                <p className="mb-1">{exp.title}</p>
+
+                <small>{exp.description}</small>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
     );
