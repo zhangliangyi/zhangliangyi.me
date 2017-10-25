@@ -8,11 +8,11 @@ class Experience extends Component {
     const experienceList = experiences.map((exp) =>
       <li className="mt-5" key={exp.name}>
         <div className="row align-items-end">
-          <div className="col-2">
+          <div className="col-2 col-md-1">
             <TimePoint time={exp.start}/>
           </div>
 
-          <div className="col-10 border border-secondary border-top-0 border-bottom-0 border-right-0">
+          <div className="col-10 col-md-11 border border-secondary border-top-0 border-bottom-0 border-right-0">
             <div className="d-flex flex-wrap">
               <img src={exp.logo} alt={exp.name} className="d-flex ml-4 align-self-start my-2"/>
 
