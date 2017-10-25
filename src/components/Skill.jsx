@@ -18,7 +18,7 @@ class Skill extends Component {
     }
 
     return (
-      <div className="card border-0 my-4">
+      <div className="card border-0 mt-5 mb-4">
         <div className="card-body">
           <h4 className="card-title text-secondary">What I am interested in</h4>
           <div className="row">
@@ -27,7 +27,7 @@ class Skill extends Component {
                 <img className="card-img-top w-50 m-auto" src={FrontendImg} alt="Card image cap"/>
                 <div className="card-body h5">
                   {skillsGroupByType.frontend.map((skill) =>
-                    <span className="badge badge-pill badge-primary m-1">{skill.text}</span>
+                    <span key={skill.text} className="badge badge-pill badge-primary m-1">{skill.text}</span>
                   )}
                 </div>
               </div>
@@ -37,7 +37,7 @@ class Skill extends Component {
                 <img className="card-img-top w-50 m-auto" src={BackendImg} alt="Card image cap"/>
                 <div className="card-body h5">
                   {skillsGroupByType.backend.map((skill) =>
-                    <span className="badge badge-pill badge-success m-1">{skill.text}</span>
+                    <span key={skill.text} className="badge badge-pill badge-success m-1">{skill.text}</span>
                   )}
                 </div>
               </div>
@@ -47,7 +47,7 @@ class Skill extends Component {
                 <img className="card-img-top w-50 m-auto" src={UtilImg} alt="Card image cap"/>
                 <div className="card-body h5">
                   {skillsGroupByType.util.map((skill) =>
-                    <span className="badge badge-pill badge-info m-1">{skill.text}</span>
+                    <span key={skill.text} className="badge badge-pill badge-info m-1">{skill.text}</span>
                   )}
                 </div>
               </div>
