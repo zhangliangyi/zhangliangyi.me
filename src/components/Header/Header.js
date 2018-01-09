@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Header extends Component {
+export default class Header extends Component {
   render() {
     const links = this.props.links;
     const linkControls = links.map((link, i) =>
@@ -20,5 +20,3 @@ class Header extends Component {
     )
   }
 }
-
-export default Header;

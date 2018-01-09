@@ -1,46 +1,50 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from './components/Header.jsx';
-import Avatar from './components/Avatar.jsx';
-import Skill from './components/Skill.jsx';
-import Experience from './components/Experience.jsx';
-import Footer from './components/Footer.jsx';
+import {
+  Header,
+  Avatar,
+  Skill,
+  Experience,
+  Footer
+} from 'Components';
 
-import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'open-iconic/font/css/open-iconic-bootstrap.min.css';
+import './app.less';
 
 const experiences = [
   {
     index: 3,
     start: '2014/04',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAEAAQAAAAAAAAogAAAAJDFhOGIxNWI5LWI0YWQtNDYyYy1hNjlhLWQ0M2ZiYmZjZjIxYw.png',
-    name: 'SAP China Lab',
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAEAAQAAAAAAAAogAAAAJDFhOGIxNWI5LWI0YWQtNDYyYy1hNjlhLWQ0M2ZiYmZjZjIxYw.png',
+    title: 'SAP China Lab',
     current: true,
-    title: 'Senior UI Engineer',
-    description: 'Working in UI commons team of Platform Pillar.'
+    subtitle: 'Senior UI Engineer',
+    description: 'Working on common components/applications for the HCM product in UI Commons Team.'
   },
   {
     index: 2,
     start: '2013/10',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAIA_wDGAAAAAQAAAAAAAAroAAAAJDcwNWMyNjYxLTdiMDMtNDliOS1iYmQxLTk1Zjk4NjdmYzM3OA.png',
-    name: 'Cisco System',
-    title: 'Software Engineer',
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAIA_wDGAAAAAQAAAAAAAAroAAAAJDcwNWMyNjYxLTdiMDMtNDliOS1iYmQxLTk1Zjk4NjdmYzM3OA.png',
+    title: 'Cisco System',
+    subtitle: 'Software Engineer',
     description: 'Develop real-time data visualization in BI system.'
   },
   {
     index: 1,
     start: '2008/07',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/1/000/031/14d/099d1fd.png',
-    name: 'ICBC Software Development Center',
-    title: 'Sr. Software Developer',
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/1/000/031/14d/099d1fd.png',
+    title: 'ICBC Software Development Center',
+    subtitle: 'Sr. Software Developer',
     description: 'Develop B/S web applications of operational risk monitoring on both front-end and back-end.'
   },
   {
     index: 0,
     start: '2004/09',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/6/005/007/3f8/3848bed.png',
-    name: 'Shanghai Jiao Tong University',
-    title: 'Bachelor of Engineer',
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/6/005/007/3f8/3848bed.png',
+    title: 'Shanghai Jiao Tong University',
+    subtitle: 'Bachelor of Engineer',
     description: 'Information Security'
   }
 ];
