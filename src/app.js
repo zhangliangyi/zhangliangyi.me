@@ -66,8 +66,8 @@ const skills = [
     items: [
       {name: 'Node.js', value: 3},
       {name: 'Express', value: 3},
-      {name: 'Java', value: 1},
-      {name: 'Restful', value: 3}
+      {name: 'Restful', value: 3},
+      {name: 'Java', value: 1}
     ]
   },
   {

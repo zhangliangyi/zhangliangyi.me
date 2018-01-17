@@ -7,16 +7,30 @@ export default class Skill extends Component {
     super(props);
     this.state = {
       colors: [
-        '#d87c7c',
-        '#919e8b',
-        '#d7ab82',
-        '#6e7074',
-        '#61a0a8',
-        '#efa18d',
-        '#787464',
-        '#cc7e63',
-        '#724e58',
-        '#4b565b'
+        '#f44336',
+        '#009688',
+        '#FFC107',
+        '#607D8B'
+      ],
+      childrenColors: [
+        '#d32f2f',
+        '#e53935',
+        '#f44336',
+        '#ef5350',
+        '#e57373',
+        '#ef9a9a',
+        '#ffcdd2',
+        '#26A69A',
+        '#4DB6AC',
+        '#80CBC4',
+        '#B2DFDB',
+        '#FFD54F',
+        '#FFE082',
+        '#FFECB3',
+        '#78909C',
+        '#90A4AE',
+        '#B0BEC5',
+        '#CFD8DC'
       ]
     };
   }
@@ -62,7 +76,7 @@ export default class Skill extends Component {
           name: 'skill',
           type:'pie',
           radius: ['45%', '60%'],
-          color: this.state.colors,
+          color: this.state.childrenColors,
           label: {
             normal: {
               fontFamily: 'Titillium Web'
