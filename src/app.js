@@ -1,68 +1,94 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from './components/Header.jsx';
-import Avatar from './components/Avatar.jsx';
-import Skill from './components/Skill.jsx';
-import Experience from './components/Experience.jsx';
-import Footer from './components/Footer.jsx';
+import {
+  Header,
+  Avatar,
+  Location,
+  Skill,
+  Experience,
+  Footer
+} from 'Components';
 
-import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'open-iconic/font/css/open-iconic-bootstrap.min.css';
+import './app.less';
 
 const experiences = [
   {
     index: 3,
     start: '2014/04',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAEAAQAAAAAAAAogAAAAJDFhOGIxNWI5LWI0YWQtNDYyYy1hNjlhLWQ0M2ZiYmZjZjIxYw.png',
-    name: 'SAP China Lab',
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAEAAQAAAAAAAAogAAAAJDFhOGIxNWI5LWI0YWQtNDYyYy1hNjlhLWQ0M2ZiYmZjZjIxYw.png',
+    title: 'SAP China Lab',
     current: true,
-    title: 'Senior UI Engineer',
-    description: 'Working in UI commons team of Platform Pillar.'
+    subtitle: 'Senior UI Engineer'
   },
   {
     index: 2,
     start: '2013/10',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAIA_wDGAAAAAQAAAAAAAAroAAAAJDcwNWMyNjYxLTdiMDMtNDliOS1iYmQxLTk1Zjk4NjdmYzM3OA.png',
-    name: 'Cisco System',
-    title: 'Software Engineer',
-    description: 'Develop real-time data visualization in BI system.'
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAIA_wDGAAAAAQAAAAAAAAroAAAAJDcwNWMyNjYxLTdiMDMtNDliOS1iYmQxLTk1Zjk4NjdmYzM3OA.png',
+    title: 'Cisco System',
+    subtitle: 'Software Engineer'
   },
   {
     index: 1,
     start: '2008/07',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/1/000/031/14d/099d1fd.png',
-    name: 'ICBC Software Development Center',
-    title: 'Sr. Software Developer',
-    description: 'Develop B/S web applications of operational risk monitoring on both front-end and back-end.'
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/1/000/031/14d/099d1fd.png',
+    title: 'ICBC Software Development Center',
+    subtitle: 'Software Developer - Sr. Software Developer'
   },
   {
     index: 0,
     start: '2004/09',
-    logo: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/6/005/007/3f8/3848bed.png',
-    name: 'Shanghai Jiao Tong University',
-    title: 'Bachelor of Engineer',
-    description: 'Information Security'
+    image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/6/005/007/3f8/3848bed.png',
+    title: 'Shanghai Jiao Tong University',
+    subtitle: 'Bachelor of Engineer, Information Security',
   }
 ];
 
 const skills = [
-  {id: 'angular', type: 'frontend', text: 'Angular'},
-  {id: 'react', type: 'frontend', text: 'React'},
-  {id: 'jquery', type: 'frontend', text: 'jQuery'},
-  {id: 'es6', type: 'frontend', text: 'ES6'},
-  {id: 'ui5', type: 'frontend', text: 'SAPUI5/OpenUI5'},
-  {id: 'less', type: 'frontend', text: 'Less'},
-  {id: 'bootstrap', type: 'frontend', text: 'Bootstrap'},
-  {id: 'node', type: 'backend', text: 'Node.js'},
-  {id: 'express', type: 'backend', text: 'Express'},
-  {id: 'odata', type: 'backend', text: 'OData'},
-  {id: 'mongodb', type: 'backend', text: 'MongoDB'},
-  {id: 'java', type: 'backend', text: 'Java'},
-  {id: 'sql', type: 'backend', text: 'SQL'},
-  {id: 'webpack', type: 'util', text: 'Webpack'},
-  {id: 'git', type: 'util', text: 'Git'},
-  {id: 'gulp', type: 'util', text: 'Gulp'},
-  {id: 'yeoman', type: 'util', text: 'Yeoman'}
+  {
+    name: 'frontend',
+    value: 21,
+    items: [
+      {name: 'jQuery', value: 4},
+      {name: 'SAPUI5/OpenUI5', value: 4},
+      {name: 'Angular', value: 3},
+      {name: 'Bootstrap', value: 3},
+      {name: 'Less/Sass', value: 3},
+      {name: 'React', value: 2},
+      {name: 'ES6', value: 2}
+    ]
+  },
+  {
+    name: 'backend',
+    value: 10,
+    items: [
+      {name: 'Node.js', value: 3},
+      {name: 'Express', value: 3},
+      {name: 'Restful', value: 3},
+      {name: 'Java', value: 1}
+    ]
+  },
+  {
+    name: 'database',
+    value: 7,
+    items: [
+      {name: 'SQL', value: 3},
+      {name: 'Oracle', value: 2},
+      {name: 'MongoDB', value: 2}
+    ]
+  },
+  {
+    name: 'tool',
+    value: 11,
+    items: [
+      {name: 'Git', value: 3},
+      {name: 'Gulp', value: 3},
+      {name: 'Yeoman', value: 3},
+      {name: 'Webpack', value: 2}
+    ]
+  }
 ];
 
 const links = [
@@ -89,6 +115,7 @@ class App extends Component {
       <div>
         <Header links={links}/>
         <Avatar/>
+        <Location city="Shanghai" country="China"/>
         <Experience experiences={experiences}/>
         <Skill skills={skills}/>
         <Footer/>

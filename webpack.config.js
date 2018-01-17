@@ -1,17 +1,24 @@
+const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: {
+    app: './src/app.js'
+  },
   output: {
-    filename: 'bundle.js',
-    path: __dirname + '/build',
-    publicPath: 'build/'
+    filename: '[name].min.js',
+    path: __dirname + '/build'
   },
   plugins: [
-    new UglifyJSPlugin({
-      sourceMap: true
-    })
+    new UglifyJSPlugin({sourceMap: true}),
+    new ExtractTextPlugin('[name].min.css')
   ],
+  resolve: {
+    alias: {
+      Components: path.resolve(__dirname, 'src/components'),
+    },
+  },
   module: {
     rules: [
       {
@@ -33,16 +40,19 @@ module.exports = {
         ]
       },
       {
-        test: /\.scss$/,
-        use: [
-          {loader: 'style-loader'},
-          {loader: 'css-loader'},
-          {loader: 'sass-loader'}
-        ]
+        test: /\.css/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader']
+        })
       },
       {
-        test: /\.(woff2?|jpe?g|png|gif|ico)$/,
+        test: /\.(jpe?g|png|gif|ico)$/,
         loader: 'file-loader?name=./images/[name].[ext]'
+      },
+      {
+        test: /\.(woff2?|ttf|otf|eot|svg)$/,
+        loader: 'file-loader?name=./fonts/[name].[ext]'
       }
     ]
   }
