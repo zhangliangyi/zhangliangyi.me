@@ -6,6 +6,7 @@ import {
 import gunplaImage from '../../images/gundam.jpg';
 import gameImage from '../../images/game.png';
 import codingImage from '../../images/coding.png';
+import basketballImage from '../../images/basketball.png';
 
 export default class Hobby extends Component {
   constructor(props) {
@@ -14,21 +15,22 @@ export default class Hobby extends Component {
       images: {
         gunpla: gunplaImage,
         game: gameImage,
-        coding: codingImage
+        coding: codingImage,
+        basketball: basketballImage
       }
     };
   }
 
   render() {
     return (
-      <div className="text-center py-4">
-        <SectionHeader icon="heart" header="Hobby"/>
+      <div className="text-center py-5">
+        <SectionHeader header="Hobby"/>
         <div className="row mt-4">
           {
             this.props.hobbies.map((hobby, index) => (
               <div className="col px-md-4" key={index}>
                 <img className="rounded-circle hobby-image" src={this.state.images[hobby.name]}/>
-                <p className="text-bold text-secondary my-2">{hobby.text}</p>
+                <p className="text-secondary my-2">{hobby.text}</p>
               </div>
             ))
           }

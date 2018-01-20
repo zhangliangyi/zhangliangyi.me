@@ -15,7 +15,7 @@ export default class Avatar extends Component {
 
   render() {
     return (
-      <div className="text-center py-4">
+      <div className="text-center py-5">
         <img className="rounded-circle my-4 avatar"
              src="/build/images/avatar.jpg"
              alt="Avatar"/>
