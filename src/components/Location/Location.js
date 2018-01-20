@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {SectionHeader} from "Components";
+import {SectionHeader} from 'Components';
 
 export default class Location extends Component {
   constructor(props) {
@@ -13,9 +13,9 @@ export default class Location extends Component {
   render() {
     let text = this.state.city + ', ' + this.state.country;
     return (
-      <div className="text-center py-4">
-        <SectionHeader icon="map-marker" header={text}/>
-        <p className="text-secondary text-bold text-uppercase">{text}</p>
+      <div className="text-center py-5">
+        <SectionHeader header="location"/>
+        <p>{text}</p>
       </div>
     );
   }

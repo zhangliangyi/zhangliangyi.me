@@ -3,11 +3,11 @@ import React, {Component} from 'react';
 export default class SectionHeader extends Component {
   render() {
     return (
-      <div className="text-muted text-uppercase text-center">
-        <div className="section-icon-container m-auto text-secondary">
-          <span className={`oi oi-${this.props.icon}`}
-                title={this.props.header}/>
-        </div>
+      <div className="text-muted text-uppercase text-center section-header">
+        <h3 className="small text-bold text-secondary position-relative d-inline-block px-4 bg-white">
+          {this.props.header}
+        </h3>
+        <hr/>
       </div>
     );
   }

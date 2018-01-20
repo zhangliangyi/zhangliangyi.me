@@ -25,7 +25,8 @@ const data = {
   hobbies: [
     {name: 'gunpla', text: 'GUNPLA'},
     {name: 'game', text: 'Game'},
-    {name: 'coding', text: 'Coding'}
+    {name: 'coding', text: 'Coding'},
+    {name: 'basketball', text: 'Basketball'}
   ],
 
   experiences: [

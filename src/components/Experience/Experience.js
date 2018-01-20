@@ -4,8 +4,8 @@ import {SectionHeader} from 'Components';
 export default class Experience extends Component {
   render() {
     return (
-      <div className="mt-4 py-4">
-        <SectionHeader header="experience" icon="clock"/>
+      <div className="py-5">
+        <SectionHeader header="experience"/>
         <ul className="timeline position-relative">
           {
             this.props.experiences.map((item, index) => (

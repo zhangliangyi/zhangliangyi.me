@@ -37,8 +37,8 @@ export default class Skill extends Component {
 
   render() {
     return (
-      <div className="mt-4 py-4">
-        <SectionHeader header="skill" icon="lightbulb"/>
+      <div className="py-5">
+        <SectionHeader header="skill"/>
         <div className="skill-chart-container position-relative">
           <div className="skill-chart" ref={el => this.pieElement = el}/>
         </div>
