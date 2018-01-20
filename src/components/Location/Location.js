@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {SectionHeader} from 'Components';
+import locationImage from '../../images/location.jpg';
 
 export default class Location extends Component {
   constructor(props) {
@@ -15,6 +16,7 @@ export default class Location extends Component {
     return (
       <div className="text-center py-5">
         <SectionHeader header="location"/>
+        <img className="mw-100" src={locationImage} alt={text}/>
         <p>{text}</p>
       </div>
     );
