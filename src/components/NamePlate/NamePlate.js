@@ -21,23 +21,21 @@ function getExpPercent(birthday) {
   const birthdayMonth = birthday.slice(4, 6);
   const birthdayDate = birthday.slice(-2);
   const now = new Date();
-  let lastBirthday, nextBirthday;
+  let lastBirthday = 0, nextBirthday = 0;
 
   if (now.getMonth() + 1 > birthdayMonth || (now.getMonth() + 1 === birthdayMonth && now.getDate() > birthdayDate)) {
     lastBirthday = new Date(now.getFullYear(), birthdayMonth - 1, birthdayDate).getTime();
-    nextBirthday = new Date(now.getFullYear() + 1, birthdayMonth -1, birthdayDate).getTime();
+    nextBirthday = new Date(now.getFullYear() + 1, birthdayMonth - 1, birthdayDate).getTime();
 
-    return Math.round(((now.getTime() - lastBirthday) * 100) / (nextBirthday - lastBirthday));
   }
 
   if (now.getMonth() + 1 < birthdayMonth || (now.getMonth() + 1 === birthdayMonth && now.getDate() < birthdayDate)) {
     lastBirthday = new Date(now.getFullYear() - 1, birthdayMonth - 1, birthdayDate).getTime();
-    nextBirthday = new Date(now.getFullYear(), birthdayMonth -1, birthdayDate).getTime();
+    nextBirthday = new Date(now.getFullYear(), birthdayMonth - 1, birthdayDate).getTime();
 
-    return Math.round(((now.getTime() - lastBirthday) * 100) / (nextBirthday - lastBirthday));
   }
 
-  return 0;
+  return Math.round(((now.getTime() - lastBirthday) * 100) / (nextBirthday - lastBirthday));
 }
 
 function getExpWidth(birthday) {
