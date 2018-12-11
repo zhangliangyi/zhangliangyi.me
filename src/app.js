@@ -2,13 +2,10 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import {
-  Header,
-  Avatar,
-  Location,
-  Hobby,
-  Skill,
-  Experience,
-  Footer
+  Panel,
+  Menu,
+  Tabs,
+  NamePlate
 } from 'Components';
 
 import data from './data';
@@ -16,17 +13,32 @@ import data from './data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.less';
 
+function createLeftPanelHeader() {
+  return (
+    <NamePlate name="Zhang, Liangyi" birthday="19851017"/>
+  )
+}
+
+function createLeftPanelContent() {
+  const tabItems = ['status', 'equipments', 'skills'];
+
+  return (
+    <div>
+      <Tabs items={tabItems}/>
+    </div>
+  )
+}
+
+
 class App extends Component {
   render() {
     return (
       <div>
-        <Header links={data.links}/>
-        <Avatar/>
-        <Location city={data.location.city} country={data.location.country}/>
-        <Hobby hobbies={data.hobbies}/>
-        <Experience experiences={data.experiences}/>
-        <Skill skills={data.skills}/>
-        <Footer/>
+        <div className="col-5">
+          <Panel showFooter="false"
+                 header={createLeftPanelHeader()}
+                 content={createLeftPanelContent()}/>
+        </div>
       </div>
     )
   }

@@ -1,15 +1,24 @@
-@import "./components/Avatar/Avatar.less";
-@import "./components/Experience/Experience.less";
-@import "./components/Footer/Footer.less";
-@import "./components/Header/Header.less";
-@import "./components/Skill/Skill.less";
-@import "./components/Hobby/Hobby.less";
-@import "./components/SectionHeader/SectionHeader.less";
+@icon-font-path: "../node_modules/open-iconic/font/fonts/";
+@activeBgColor: #25A0F0;
+@textColor: #fff;
+@textInvertColor: #333;
+@textInactiveColor: #888;
 
-.container {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import "../node_modules/open-iconic/font/css/open-iconic-bootstrap";
 
-  .text-bold {
-    font-family: 'Titillium Web', sans-serif;
-  }
+@import "components/Panel/Panel";
+@import "components/Menu/Menu";
+@import "components/Tabs/Tabs";
+@import "components/NamePlate/NamePlate";
+
+@font-face {
+  font-family: SAO;
+  src: url("fonts/SAO.otf") format("opentype");
+}
+
+body {
+  background-color: #222;
+  font-family: SAO, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  margin: 5rem 1rem;
 }

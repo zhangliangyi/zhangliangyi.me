@@ -33,29 +33,29 @@ const data = {
     {
       index: 3,
       start: '2014/04',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAEAAQAAAAAAAAogAAAAJDFhOGIxNWI5LWI0YWQtNDYyYy1hNjlhLWQ0M2ZiYmZjZjIxYw.png',
+      image: 'https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg',
       title: 'SAP China Lab',
       current: true,
-      subtitle: 'Senior UI Engineer'
+      subtitle: 'Lead UI Engineer'
     },
     {
       index: 2,
       start: '2013/10',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAIA_wDGAAAAAQAAAAAAAAroAAAAJDcwNWMyNjYxLTdiMDMtNDliOS1iYmQxLTk1Zjk4NjdmYzM3OA.png',
-      title: 'Cisco System',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/200px-Cisco_logo.svg.png',
+      title: 'Cisco Systems',
       subtitle: 'Software Engineer'
     },
     {
       index: 1,
       start: '2008/07',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/1/000/031/14d/099d1fd.png',
+      image: 'https://upload.wikimedia.org/wikipedia/en/3/33/Industrial_and_Commercial_Bank_of_China_logo.svg',
       title: 'ICBC Software Development Center',
       subtitle: 'Software Developer - Sr. Software Developer'
     },
     {
       index: 0,
       start: '2004/09',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/6/005/007/3f8/3848bed.png',
+      image: 'https://upload.wikimedia.org/wikipedia/en/d/da/Sjtu-logo-standard-red.png',
       title: 'Shanghai Jiao Tong University',
       subtitle: 'Bachelor of Engineer, Information Security',
     }
