@@ -1,4 +1,10 @@
 const data = {
+  name: '张良毅(Jacob Zhang)',
+  gender: 'male',
+  birthday: '1985/10/17',
+  desc: 'Lead UI Engineer at SAP Successfactors',
+  careerStart: '2008/07/01',
+
   links: [
     {
       id: 'github',
@@ -22,90 +28,136 @@ const data = {
     city: 'Shanghai'
   },
 
-  hobbies: [
-    {name: 'gunpla', text: 'GUNPLA'},
-    {name: 'game', text: 'Game'},
-    {name: 'coding', text: 'Coding'},
-    {name: 'basketball', text: 'Basketball'}
-  ],
-
   experiences: [
     {
-      index: 3,
+      name: 'SAP Successfactors',
       start: '2014/04',
-      image: 'https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg',
-      title: 'SAP China Lab',
+      logo: 'https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg',
       current: true,
-      subtitle: 'Lead UI Engineer'
+      title: 'Lead UI Engineer',
+      projects: [
+        'SuccessMap Homepage',
+        'Custom Tile Wizard',
+        'Node.js Setup',
+        'Gulp Plugin for Karma Testing Adoption',
+        'Mock Server for Development'
+      ],
+      used: [
+        'SAPUI5',
+        'Node.js',
+        'Karma',
+        'QUnit',
+        'Gulp',
+        'Koa',
+        'Git'
+      ]
     },
     {
-      index: 2,
+      name: 'Cisco Systems',
       start: '2013/10',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/200px-Cisco_logo.svg.png',
-      title: 'Cisco Systems',
-      subtitle: 'Software Engineer'
+      end: '2014/03',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/200px-Cisco_logo.svg.png',
+      title: 'Software Engineer',
+      projects: [
+        'Real Time Data Visualization POCs'
+      ],
+      used: [
+        'AngularJS',
+        'Socket.io',
+        'HTML5 Canvas'
+      ]
     },
     {
-      index: 1,
+      name: 'ICBC Software Development Center',
       start: '2008/07',
-      image: 'https://upload.wikimedia.org/wikipedia/en/3/33/Industrial_and_Commercial_Bank_of_China_logo.svg',
-      title: 'ICBC Software Development Center',
-      subtitle: 'Software Developer - Sr. Software Developer'
+      end: '2013/09',
+      logo: 'https://upload.wikimedia.org/wikipedia/en/3/33/Industrial_and_Commercial_Bank_of_China_logo.svg',
+      title: 'Software Developer - Sr. Software Developer',
+      project: [
+        'B/S Web Applications in Operational Risk Management'
+      ],
+      used: [
+        'jQuery',
+        'Java',
+        'SQL'
+      ]
     },
     {
-      index: 0,
+      name: 'Shanghai Jiao Tong University',
       start: '2004/09',
-      image: 'https://upload.wikimedia.org/wikipedia/en/d/da/Sjtu-logo-standard-red.png',
-      title: 'Shanghai Jiao Tong University',
-      subtitle: 'Bachelor of Engineer, Information Security',
+      end: '2008/06',
+      logo: 'https://upload.wikimedia.org/wikipedia/en/d/da/Sjtu-logo-standard-red.png',
+      title: 'Bachelor of Engineer, Information Security',
     }
   ],
 
   skills: [
     {
-      name: 'frontend',
-      value: 21,
-      items: [
-        {name: 'jQuery', value: 4},
-        {name: 'SAPUI5/OpenUI5', value: 4},
-        {name: 'Angular', value: 3},
-        {name: 'Bootstrap', value: 3},
-        {name: 'Less/Sass', value: 3},
-        {name: 'React', value: 2},
-        {name: 'ES6', value: 2}
-      ]
+      name: 'jQuery',
+      url: 'http://jquery.com/'
     },
     {
-      name: 'backend',
-      value: 10,
-      items: [
-        {name: 'Node.js', value: 3},
-        {name: 'Express', value: 3},
-        {name: 'Restful', value: 3},
-        {name: 'Java', value: 1}
-      ]
+      name: 'SAPUI5/OpenUI5',
+      url: 'https://openui5.org/'
     },
     {
-      name: 'database',
-      value: 7,
-      items: [
-        {name: 'SQL', value: 3},
-        {name: 'Oracle', value: 2},
-        {name: 'MongoDB', value: 2}
-      ]
+      name: 'AngularJS 1.x',
+      url: 'https://angularjs.org/'
     },
     {
-      name: 'tool',
-      value: 11,
-      items: [
-        {name: 'Git', value: 3},
-        {name: 'Gulp', value: 3},
-        {name: 'Yeoman', value: 3},
-        {name: 'Webpack', value: 2}
-      ]
+      name: 'Bootstrap',
+      url: 'http://getbootstrap.com/'
+    },
+    {
+      name: 'Less',
+      url: 'http://lesscss.org/'
+    },
+    {
+      name: 'React',
+      url: 'https://reactjs.org/'
+    },
+    {
+      name: 'Node.js',
+      url: 'https://nodejs.org/'
+    },
+    {
+      name: 'Webpack',
+      url: 'https://webpack.js.org/'
+    },
+    {
+      name: 'Gulp',
+      url: 'https://gulpjs.com/'
+    },
+    {
+      name: 'Express',
+      url: 'http://expressjs.com/'
+    },
+    {
+      name: 'Koa',
+      url: 'https://koajs.com/'
+    },
+    {
+      name: 'Yeoman',
+      url: 'https://yeoman.io/'
+    },
+    {
+      name: 'Git'
+    },
+    {
+      name: 'Java'
+    },
+    {
+      name: 'SQL'
+    },
+    {
+      name: 'QUnit',
+      url: 'https://qunitjs.com/'
+    },
+    {
+      name: 'Karma',
+      url: 'http://karma-runner.github.io/latest/index.html'
     }
   ]
 };
-
 
 export default data;

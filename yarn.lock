@@ -1592,11 +1592,6 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-dmak@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/dmak/-/dmak-0.3.1.tgz#9e72c1ab33015d1209e0b9ce374277885356814d"
-  integrity sha1-nnLBqzMBXRIJ4LnON0J3iFNWgU0=
-
 domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
@@ -1715,11 +1710,6 @@ esutils@^2.0.0, esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
   integrity sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs=
-
-eve-raphael@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/eve-raphael/-/eve-raphael-0.5.0.tgz#17c754b792beef3fa6684d79cf5a47c63c4cda30"
-  integrity sha1-F8dUt5K+7z+maE15z1pHxjxM2jA=
 
 events@^1.0.0:
   version "1.1.1"
@@ -3377,13 +3367,6 @@ randomfill@^1.0.3:
   dependencies:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
-
-raphael@^2.2.7:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/raphael/-/raphael-2.2.7.tgz#231b19141f8d086986d8faceb66f8b562ee2c810"
-  integrity sha1-IxsZFB+NCGmG2PrOtm+LVi7iyBA=
-  dependencies:
-    eve-raphael "0.5.0"
 
 rc@^1.2.7:
   version "1.2.8"

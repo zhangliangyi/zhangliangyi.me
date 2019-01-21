@@ -1,4 +1,5 @@
-export {default as Panel} from './Panel/Panel';
-export {default as Menu} from './Menu/Menu';
-export {default as Tabs} from './Tabs/Tabs';
-export {default as NamePlate} from './NamePlate/NamePlate'
+export {default as Header} from './Header/Header';
+export {default as Body} from './Body/Body';
+export {default as Section} from './Section/Section';
+export {default as Experience} from './Experience/Experience';
+export {default as Footer} from './Footer/Footer';
