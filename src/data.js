@@ -1,9 +1,14 @@
 const data = {
-  name: '张良毅(Jacob Zhang)',
+  name: '张良毅',
+  name2: '(Jacob Zhang)',
+  bio: 'The Simplest, The Best',
   gender: 'male',
   birthday: '1985/10/17',
-  desc: 'Lead UI Engineer at SAP Successfactors',
-  careerStart: '2008/07/01',
+  job: 'Lead UI Engineer',
+  company: 'SAP Successfactors',
+  work: 'JavaScript',
+  career: '2008/07/01',
+  location: 'Shanghai, China',
 
   links: [
     {
@@ -22,11 +27,6 @@ const data = {
       href: 'https://www.codeschool.com/users/zhangliangyi/'
     }
   ],
-
-  location: {
-    country: 'China',
-    city: 'Shanghai'
-  },
 
   experiences: [
     {

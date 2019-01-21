@@ -10,15 +10,17 @@ import {
 import data from './data';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-circular-progressbar/dist/styles.css';
+import './fontello.css';
 import './app.less';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header></Header>
-        <Body></Body>
-        <Footer></Footer>
+        <Header data={data}/>
+        <Body data={data}/>
+        <Footer/>
       </div>
     );
   }
