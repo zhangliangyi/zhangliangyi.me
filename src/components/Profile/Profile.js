@@ -64,10 +64,10 @@ export default class Profile extends Component {
 
           </div>
 
-          <h1>{this.props.profile.name}<small>{this.props.profile.name2}</small></h1>
+          <h1>{this.props.profile.name}</h1>
+          <h2><small>{this.props.profile.name2}</small></h2>
           <h3 className="text-secondary profile-subtitle">{getSummary(job, company, work)}</h3>
-
-          <h2 className="bio">{this.props.profile.bio}</h2>
+          <h4 className="bio">{this.props.profile.bio}</h4>
         </header>
 
         <div className="row pt-4">

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {
   Profile,
-  Experience
+  Experience,
+  Contribution
 } from 'Components';
 
 export default class Body extends Component {
@@ -22,6 +23,7 @@ export default class Body extends Component {
       <div>
         <Profile profile={profile}/>
         <Experience exps={this.props.data.experiences}/>
+        <Contribution/>
       </div>
     );
   }

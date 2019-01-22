@@ -1,6 +1,6 @@
 const data = {
   name: '张良毅',
-  name2: '(Jacob Zhang)',
+  name2: 'Jacob Zhang',
   bio: 'The Simplest, The Best',
   gender: 'male',
   birthday: '1985/10/17',
@@ -30,6 +30,8 @@ const data = {
 
   experiences: [
     {
+      id: 'sap',
+      type: 'work',
       name: 'SAP Successfactors',
       start: '2014/04',
       logo: 'https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg',
@@ -53,9 +55,11 @@ const data = {
       ]
     },
     {
+      id: 'cisco',
+      type: 'work',
       name: 'Cisco Systems',
-      start: '2013/10',
-      end: '2014/03',
+      year: 0,
+      percent: 50,
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/200px-Cisco_logo.svg.png',
       title: 'Software Engineer',
       projects: [
@@ -68,12 +72,14 @@ const data = {
       ]
     },
     {
+      id: 'icbc',
+      type: 'work',
       name: 'ICBC Software Development Center',
-      start: '2008/07',
-      end: '2013/09',
+      year: 5,
+      percent: 25,
       logo: 'https://upload.wikimedia.org/wikipedia/en/3/33/Industrial_and_Commercial_Bank_of_China_logo.svg',
       title: 'Software Developer - Sr. Software Developer',
-      project: [
+      projects: [
         'B/S Web Applications in Operational Risk Management'
       ],
       used: [
@@ -83,79 +89,13 @@ const data = {
       ]
     },
     {
+      id: 'sjtu',
+      type: 'education',
       name: 'Shanghai Jiao Tong University',
-      start: '2004/09',
-      end: '2008/06',
+      year: 4,
+      percent: 0,
       logo: 'https://upload.wikimedia.org/wikipedia/en/d/da/Sjtu-logo-standard-red.png',
-      title: 'Bachelor of Engineer, Information Security',
-    }
-  ],
-
-  skills: [
-    {
-      name: 'jQuery',
-      url: 'http://jquery.com/'
-    },
-    {
-      name: 'SAPUI5/OpenUI5',
-      url: 'https://openui5.org/'
-    },
-    {
-      name: 'AngularJS 1.x',
-      url: 'https://angularjs.org/'
-    },
-    {
-      name: 'Bootstrap',
-      url: 'http://getbootstrap.com/'
-    },
-    {
-      name: 'Less',
-      url: 'http://lesscss.org/'
-    },
-    {
-      name: 'React',
-      url: 'https://reactjs.org/'
-    },
-    {
-      name: 'Node.js',
-      url: 'https://nodejs.org/'
-    },
-    {
-      name: 'Webpack',
-      url: 'https://webpack.js.org/'
-    },
-    {
-      name: 'Gulp',
-      url: 'https://gulpjs.com/'
-    },
-    {
-      name: 'Express',
-      url: 'http://expressjs.com/'
-    },
-    {
-      name: 'Koa',
-      url: 'https://koajs.com/'
-    },
-    {
-      name: 'Yeoman',
-      url: 'https://yeoman.io/'
-    },
-    {
-      name: 'Git'
-    },
-    {
-      name: 'Java'
-    },
-    {
-      name: 'SQL'
-    },
-    {
-      name: 'QUnit',
-      url: 'https://qunitjs.com/'
-    },
-    {
-      name: 'Karma',
-      url: 'http://karma-runner.github.io/latest/index.html'
+      title: 'Bachelor of Engineer, Information Security'
     }
   ]
 };
