@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import CircularProgressbar from 'react-circular-progressbar';
 
-function usedBadges(used) {
-  if (!used || used.length === 0) {
+function useBadges(uses) {
+  if (!uses || uses.length === 0) {
     return '';
   }
 
   return (
     <div>
       {
-        used.map((used, index) =>
-          <span className="badge badge-info mr-1 exp-badge" key={index}>{used}</span>
+        uses.map((use, index) =>
+          <span className="badge badge-info mr-1 exp-badge" key={index}>{use}</span>
         )
       }
     </div>
@@ -100,7 +100,7 @@ export default class Experience extends Component {
 
                       <div className="mt-2">
                         {exp.projects && <strong>With</strong>}
-                        {usedBadges(exp.used)}
+                        {useBadges(exp.use)}
                       </div>
                     </div>
                   </div>

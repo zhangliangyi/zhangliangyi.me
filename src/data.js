@@ -44,7 +44,7 @@ const data = {
         'Gulp Plugin for Karma Testing Adoption',
         'Mock Server for Development'
       ],
-      used: [
+      use: [
         'SAPUI5',
         'Node.js',
         'Karma',
@@ -65,7 +65,7 @@ const data = {
       projects: [
         'Real Time Data Visualization POCs'
       ],
-      used: [
+      use: [
         'AngularJS',
         'Socket.io',
         'HTML5 Canvas'
@@ -82,7 +82,7 @@ const data = {
       projects: [
         'B/S Web Applications in Operational Risk Management'
       ],
-      used: [
+      use: [
         'jQuery',
         'Java',
         'SQL'
@@ -105,7 +105,13 @@ const data = {
       type: 'web',
       desc: 'My personal page powered by Github page',
       url: 'https://github.com/zhangliangyi/zhangliangyi.me',
-      released: true
+      released: true,
+      use: [
+        'React',
+        'Bootstrap',
+        'Webpack',
+        'Less'
+      ]
     },
     {
       name: 'haven',
