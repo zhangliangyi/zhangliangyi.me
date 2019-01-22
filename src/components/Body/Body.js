@@ -23,7 +23,7 @@ export default class Body extends Component {
       <div>
         <Profile profile={profile}/>
         <Experience exps={this.props.data.experiences}/>
-        <Contribution/>
+        <Contribution projects={this.props.data.openSources}/>
       </div>
     );
   }

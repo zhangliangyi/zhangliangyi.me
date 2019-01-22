@@ -97,6 +97,22 @@ const data = {
       logo: 'https://upload.wikimedia.org/wikipedia/en/d/da/Sjtu-logo-standard-red.png',
       title: 'Bachelor of Engineer, Information Security'
     }
+  ],
+
+  openSources: [
+    {
+      name: 'zhangliangyi.me',
+      type: 'web',
+      desc: 'My personal page powered by Github page',
+      url: 'https://github.com/zhangliangyi/zhangliangyi.me',
+      released: true
+    },
+    {
+      name: 'haven',
+      type: 'client',
+      desc: 'Http archive viewer with Electron',
+      released: false
+    }
   ]
 };
 

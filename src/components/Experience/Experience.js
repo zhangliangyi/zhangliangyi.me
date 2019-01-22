@@ -75,8 +75,9 @@ export default class Experience extends Component {
                                        }}/>
 
                   <div>
-                    <h5
-                      className={`${exp.current ? 'text-primary exp-title-current' : ''} mt-0 exp-title`}>{exp.name}</h5>
+                    <h5 className={`${exp.current ? 'text-primary exp-title-current' : ''} mt-0 exp-title bold-title`}>
+                      {exp.name}
+                    </h5>
                     <h6 className="mt-1 text-secondary exp-subtitle">{exp.title}</h6>
 
                     <div className="exp-body">
