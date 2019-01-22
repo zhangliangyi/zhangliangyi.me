@@ -1,15 +1,37 @@
-@import "./components/Avatar/Avatar.less";
-@import "./components/Experience/Experience.less";
-@import "./components/Footer/Footer.less";
-@import "./components/Header/Header.less";
-@import "./components/Skill/Skill.less";
-@import "./components/Hobby/Hobby.less";
-@import "./components/SectionHeader/SectionHeader.less";
-
-.container {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-  .text-bold {
-    font-family: 'Titillium Web', sans-serif;
-  }
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("fonts/RobotoSlab-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url("fonts/TitilliumWeb-Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+
+@import "components/Header/Header";
+@import "components/Body/Body";
+@import "components/Profile/Profile";
+@import "components/Experience/Experience";
+@import "components/Contribution/Contribution";
+@import "components/Footer/Footer";

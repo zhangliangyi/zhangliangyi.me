@@ -1,20 +1,47 @@
-.timeline {
-  padding: 2.5rem 0;
+.exp {
+  .exp-list {
 
-  &:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    content: ' ';
-    left: 50%;
-    width: .25rem;
-    margin-left: -.125rem;
-    background-color: #eee;
+    .exp-item {
+      margin-bottom: 3rem;
+
+      &:first-child {
+        margin-top: 3rem;
+      }
+
+      .exp-time {
+        max-width: 4rem;
+      }
+
+      .exp-logo {
+        max-height: 4rem;
+      }
+
+      .exp-title {
+        color: #555;
+        font-family: 'Titillium Web', sans-serif;
+
+        &.exp-title-current {
+          font-size: 1.5rem;
+        }
+      }
+
+      .exp-subtitle {
+        font-weight: 300;
+      }
+
+      .exp-body {
+        margin-top: 1rem;
+
+        .exp-badge {
+          font-weight: 300;
+        }
+      }
+    }
   }
-}
 
-.card-img-top.company-logo {
-  width: 5rem;
-  margin: 1.25rem auto 0 auto;
-}
+  .exp-logo {
+    max-height: 6rem;
+  }
 
+
+}

@@ -3,32 +3,26 @@ import ReactDOM from 'react-dom';
 
 import {
   Header,
-  Avatar,
-  Location,
-  Hobby,
-  Skill,
-  Experience,
+  Body,
   Footer
 } from 'Components';
 
 import data from './data';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-circular-progressbar/dist/styles.css';
+import './fontello.css';
 import './app.less';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header links={data.links}/>
-        <Avatar/>
-        <Location city={data.location.city} country={data.location.country}/>
-        <Hobby hobbies={data.hobbies}/>
-        <Experience experiences={data.experiences}/>
-        <Skill skills={data.skills}/>
+        <Header data={data}/>
+        <Body data={data}/>
         <Footer/>
       </div>
-    )
+    );
   }
 }
 

@@ -1,4 +1,15 @@
 const data = {
+  name: '张良毅',
+  name2: 'Jacob Zhang',
+  bio: 'The Simplest, The Best',
+  gender: 'male',
+  birthday: '1985/10/17',
+  job: 'Lead UI Engineer',
+  company: 'SAP Successfactors',
+  work: 'JavaScript',
+  career: '2008/07/01',
+  location: 'Shanghai, China',
+
   links: [
     {
       id: 'github',
@@ -17,95 +28,76 @@ const data = {
     }
   ],
 
-  location: {
-    country: 'China',
-    city: 'Shanghai'
-  },
-
-  hobbies: [
-    {name: 'gunpla', text: 'GUNPLA'},
-    {name: 'game', text: 'Game'},
-    {name: 'coding', text: 'Coding'},
-    {name: 'basketball', text: 'Basketball'}
-  ],
-
   experiences: [
     {
-      index: 3,
+      id: 'sap',
+      type: 'work',
+      name: 'SAP Successfactors',
       start: '2014/04',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAEAAQAAAAAAAAogAAAAJDFhOGIxNWI5LWI0YWQtNDYyYy1hNjlhLWQ0M2ZiYmZjZjIxYw.png',
-      title: 'SAP China Lab',
+      logo: 'https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg',
       current: true,
-      subtitle: 'Senior UI Engineer'
-    },
-    {
-      index: 2,
-      start: '2013/10',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/AAIA_wDGAAAAAQAAAAAAAAroAAAAJDcwNWMyNjYxLTdiMDMtNDliOS1iYmQxLTk1Zjk4NjdmYzM3OA.png',
-      title: 'Cisco System',
-      subtitle: 'Software Engineer'
-    },
-    {
-      index: 1,
-      start: '2008/07',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/1/000/031/14d/099d1fd.png',
-      title: 'ICBC Software Development Center',
-      subtitle: 'Software Developer - Sr. Software Developer'
-    },
-    {
-      index: 0,
-      start: '2004/09',
-      image: 'https://media-exp1.licdn.com/mpr/mpr/shrink_75_75/p/6/005/007/3f8/3848bed.png',
-      title: 'Shanghai Jiao Tong University',
-      subtitle: 'Bachelor of Engineer, Information Security',
-    }
-  ],
-
-  skills: [
-    {
-      name: 'frontend',
-      value: 21,
-      items: [
-        {name: 'jQuery', value: 4},
-        {name: 'SAPUI5/OpenUI5', value: 4},
-        {name: 'Angular', value: 3},
-        {name: 'Bootstrap', value: 3},
-        {name: 'Less/Sass', value: 3},
-        {name: 'React', value: 2},
-        {name: 'ES6', value: 2}
+      title: 'Lead UI Engineer',
+      projects: [
+        'SuccessMap Homepage',
+        'Custom Tile Wizard',
+        'Node.js Setup',
+        'Gulp Plugin for Karma Testing Adoption',
+        'Mock Server for Development'
+      ],
+      used: [
+        'SAPUI5',
+        'Node.js',
+        'Karma',
+        'QUnit',
+        'Gulp',
+        'Koa',
+        'Git'
       ]
     },
     {
-      name: 'backend',
-      value: 10,
-      items: [
-        {name: 'Node.js', value: 3},
-        {name: 'Express', value: 3},
-        {name: 'Restful', value: 3},
-        {name: 'Java', value: 1}
+      id: 'cisco',
+      type: 'work',
+      name: 'Cisco Systems',
+      year: 0,
+      percent: 50,
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/200px-Cisco_logo.svg.png',
+      title: 'Software Engineer',
+      projects: [
+        'Real Time Data Visualization POCs'
+      ],
+      used: [
+        'AngularJS',
+        'Socket.io',
+        'HTML5 Canvas'
       ]
     },
     {
-      name: 'database',
-      value: 7,
-      items: [
-        {name: 'SQL', value: 3},
-        {name: 'Oracle', value: 2},
-        {name: 'MongoDB', value: 2}
+      id: 'icbc',
+      type: 'work',
+      name: 'ICBC Software Development Center',
+      year: 5,
+      percent: 25,
+      logo: 'https://upload.wikimedia.org/wikipedia/en/3/33/Industrial_and_Commercial_Bank_of_China_logo.svg',
+      title: 'Software Developer - Sr. Software Developer',
+      projects: [
+        'B/S Web Applications in Operational Risk Management'
+      ],
+      used: [
+        'jQuery',
+        'Java',
+        'SQL'
       ]
     },
     {
-      name: 'tool',
-      value: 11,
-      items: [
-        {name: 'Git', value: 3},
-        {name: 'Gulp', value: 3},
-        {name: 'Yeoman', value: 3},
-        {name: 'Webpack', value: 2}
-      ]
+      id: 'sjtu',
+      type: 'education',
+      name: 'Shanghai Jiao Tong University',
+      year: 4,
+      percent: 0,
+      logo: 'https://upload.wikimedia.org/wikipedia/en/d/da/Sjtu-logo-standard-red.png',
+      title: 'Bachelor of Engineer, Information Security'
     }
   ]
 };
-
 
 export default data;

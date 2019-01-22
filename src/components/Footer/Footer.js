@@ -3,11 +3,7 @@ import React, {Component} from 'react';
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="py-4">
-        <small className="text-secondary">
-          © Copyright 2018 Zhang, Liangyi
-        </small>
-      </footer>
+      <footer className="small text-secondary py-4 border-top">© Copyright 2019 Zhang, Liangyi</footer>
     );
   }
 }

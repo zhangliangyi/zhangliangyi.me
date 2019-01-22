@@ -1,20 +1,35 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     app: './src/app.js'
   },
   output: {
     filename: '[name].min.js',
     path: __dirname + '/build',
-    publicPath: '/build'
+    publicPath: '/build/'
   },
   plugins: [
-    new UglifyJSPlugin({sourceMap: true}),
-    new ExtractTextPlugin('[name].min.css')
+    new MiniCssExtractPlugin({
+      filename: "[name].min.css"
+    })
   ],
+  optimization: {
+    minimizer: [new UglifyJSPlugin({sourceMap: true})],
+    splitChunks: {
+      cacheGroups: {
+        app: {
+          name: 'app',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true
+        }
+      }
+    }
+  },
   resolve: {
     alias: {
       Components: path.resolve(__dirname, 'src/components'),
@@ -28,32 +43,48 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env', 'react']
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
       },
       {
         test: /\.less$/,
         use: [
-          {loader: 'style-loader'},
+          {loader: MiniCssExtractPlugin.loader},
           {loader: 'css-loader'},
           {loader: 'less-loader', options: {strictMath: true, noIeCompat: true}}
         ]
       },
       {
-        test: /\.css/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader']
-        })
+        test: /\.css$/,
+        use: [
+          {loader: MiniCssExtractPlugin.loader},
+          'css-loader'
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|ico)$/,
-        loader: 'file-loader?name=/images/[name].[ext]'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/'
+            }
+          }
+        ]
       },
       {
         test: /\.(woff2?|ttf|otf|eot|svg)$/,
-        loader: 'file-loader?name=/fonts/[name].[ext]'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
       }
     ]
   }
