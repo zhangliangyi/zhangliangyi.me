@@ -83,7 +83,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?65237557#fontello') format('svg');
+    src: url('../font/fontello.svg?82438599#fontello') format('svg');
   }
 }
 */
@@ -126,7 +126,9 @@
 .icon-male:before { content: '\E800'; } /* '' */
 .icon-location:before { content: '\E801'; } /* '' */
 .icon-award:before { content: '\E802'; } /* '' */
+.icon-chrome:before { content: '\E841'; } /* '' */
 .icon-suitcase:before { content: '\F0F2'; } /* '' */
+.icon-desktop:before { content: '\F108'; } /* '' */
 .icon-graduation-cap:before { content: '\F19D'; } /* '' */
 .icon-balance-scale:before { content: '\F24E'; } /* '' */
 
@@ -154,6 +156,14 @@
 }
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.bold-title {
+  color: #555;
+  font-family: 'Titillium Web', sans-serif;
+}
+.thin-text {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 .head-link a {
   font-size: 90%;
@@ -199,10 +209,6 @@ body {
 .exp .exp-list .exp-item .exp-logo {
   max-height: 4rem;
 }
-.exp .exp-list .exp-item .exp-title {
-  color: #555;
-  font-family: 'Titillium Web', sans-serif;
-}
 .exp .exp-list .exp-item .exp-title.exp-title-current {
   font-size: 1.5rem;
 }
@@ -218,7 +224,7 @@ body {
 .exp .exp-logo {
   max-height: 6rem;
 }
-.contribution h4 {
-  font-family: 'Titillium Web', sans-serif;
+.project-type-icon {
+  font-size: 2rem;
 }
 
