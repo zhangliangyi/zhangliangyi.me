@@ -33,7 +33,7 @@ const data = {
       id: 'sap',
       type: 'work',
       name: 'SAP Successfactors',
-      start: '2014/04',
+      start: '2014/04/01',
       logo: 'https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg',
       current: true,
       title: 'Lead UI Engineer',
@@ -42,7 +42,8 @@ const data = {
         'Custom Tile Wizard',
         'Node.js Setup',
         'Gulp Plugin for Karma Testing Adoption',
-        'Mock Server for Development'
+        'Mock Server for Development',
+        'Nice Documentation'
       ],
       use: [
         'SAPUI5',
@@ -51,7 +52,8 @@ const data = {
         'QUnit',
         'Gulp',
         'Koa',
-        'Git'
+        'Git',
+        'Markdown'
       ]
     },
     {
