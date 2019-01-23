@@ -82,7 +82,7 @@ const data = {
       logo: 'https://upload.wikimedia.org/wikipedia/en/3/33/Industrial_and_Commercial_Bank_of_China_logo.svg',
       title: 'Software Developer - Sr. Software Developer',
       projects: [
-        'B/S Web Applications in Operational Risk Management'
+        'B/S Web Applications for Operational Risk Management'
       ],
       use: [
         'jQuery',
